@@ -18,3 +18,5 @@ const game = {
     { name: 'rare candy', quantity: 99 }
   ]
 }
+
+console.log(game)

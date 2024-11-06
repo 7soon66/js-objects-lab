@@ -156,4 +156,6 @@ module.exports = pokemon
 
 // console.dir(pokemon, { maxArrayLength: null })
 
-console.log(pokemon[59 - 1])
+// console.log(pokemon[59 - 1])
+
+// excersise one done
