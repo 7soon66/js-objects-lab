@@ -37,7 +37,7 @@ const game = {
 // Solve Exercise 3 here:
 // */
 
-// game.difficulty = 'easy'
+game.difficulty = 'easy'
 
 // console.log(game.difficulty)
 
@@ -66,16 +66,27 @@ Exercise 5
 Solve Exercise 5 here:
 */
 
-// for (let i = 0; i < pokemon.length; i++) {
-//   if (pokemon.hp > 100) {
-//     for (let n = 0; n < 3; n++) {
-//       game.party[n].push(pokemon[i])
-//     }
-//   }
-// }
-
 game.party.push(pokemon[23])
 game.party.push(pokemon[37])
 game.party.push(pokemon[70])
 
 console.log(game.party)
+
+// excersise five done
+
+/*
+Exercise 6
+1. Set the `completed` property to true for gyms with a difficulty  below 3.
+2. Think about how you'd loop through the `gyms` array to check and update the `completed` property.
+
+
+Solve Exercise 6 here:
+*/
+
+for (let i = 0; i < game.gyms.length; i++) {
+  if (game.gyms[i].difficulty < 3) {
+    game.gyms[i].completed = true
+  }
+}
+
+console.log(game.gyms)
