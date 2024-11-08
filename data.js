@@ -153,9 +153,3 @@ const pokemon = [
   { number: 151, name: 'Mew', type: 'psychic', hp: 100, starter: false }
 ]
 module.exports = pokemon
-
-// console.dir(pokemon, { maxArrayLength: null })
-
-// console.log(pokemon[59 - 1])
-
-// excersise one done
