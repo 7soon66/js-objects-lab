@@ -19,28 +19,27 @@ const game = {
   ]
 }
 
-console.dir(pokemon, { maxArrayLength: null })
+// console.dir(pokemon, { maxArrayLength: null })
 
-console.log(pokemon[59 - 1])
+// console.log(pokemon[59 - 1])
 
-// excersise one done
+// // excersise one done
 
-console.log(game)
+// console.log(game)
 
-// excersise two done
+// // excersise two done
 
-/*
-Exercise 3
-1. Add a new property to the `game` object. Let's call it "difficulty".
-2. Choose a value for "difficulty" that you think fits the game. Ex: "Easy", "Med" or "Hard". How would you assign it?
+// /*
+// Exercise 3
+// 1. Add a new property to the `game` object. Let's call it "difficulty".
+// 2. Choose a value for "difficulty" that you think fits the game. Ex: "Easy", "Med" or "Hard". How would you assign it?
 
+// Solve Exercise 3 here:
+// */
 
-Solve Exercise 3 here:
-*/
+// game.difficulty = 'easy'
 
-game.difficulty = 'easy'
-
-console.log(game.difficulty)
+// console.log(game.difficulty)
 
 /*
 Exercise 4
@@ -51,6 +50,32 @@ Exercise 4
 Solve Exercise 4 here:
 */
 
-// const starterPokemon = (pokemon.starter = true)
+for (let i = 0; i < pokemon.length; i++) {
+  if (pokemon[i].starter == true) {
+    game.party[i] = pokemon[i]
+  }
+}
+// console.log(game.party)
 
-// const starterPokemon = pokemon.filter(pokemon => pokemon.starter)
+/*
+Exercise 5
+1. Choose three more Pokémon from the `pokemon` array and add them to your party.
+2. Consider different attributes like 'type' or 'HP' for your selection. Which array method will you use to add them?
+
+
+Solve Exercise 5 here:
+*/
+
+// for (let i = 0; i < pokemon.length; i++) {
+//   if (pokemon.hp > 100) {
+//     for (let n = 0; n < 3; n++) {
+//       game.party[n].push(pokemon[i])
+//     }
+//   }
+// }
+
+game.party.push(pokemon[23])
+game.party.push(pokemon[37])
+game.party.push(pokemon[70])
+
+console.log(game.party)
