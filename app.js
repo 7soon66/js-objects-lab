@@ -16,7 +16,10 @@ const game = {
     { name: 'potion', quantity: 4 },
     { name: 'pokeball', quantity: 8 },
     { name: 'rare candy', quantity: 99 }
-  ]
+  ],
+  catchPokemon: (pokemonObj) => {
+    game.party.push(pokemonObj)
+  }
 }
 
 // console.dir(pokemon, { maxArrayLength: null })
@@ -151,3 +154,13 @@ After writing this method, call it and pass in a Pokemon object of your choice f
 
 Solve Exercise 10 here:
 */
+const hussain = {
+  number: 255,
+  name: 'husain',
+  type: 'grass',
+  hp: 255,
+  starter: false
+}
+
+game.catchPokemon(pokemon[26])
+console.log(game.party)
